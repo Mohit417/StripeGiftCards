@@ -13,8 +13,17 @@
 		04D0761D1A69E66F00094431 /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D076191A69C14700094431 /* Stripe.framework */; };
 		04D0761E1A69E66F00094431 /* Stripe.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04D076191A69C14700094431 /* Stripe.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3143AB43230DF738003A54FC /* BasicIntegrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3143AB42230DF738003A54FC /* BasicIntegrationUITests.swift */; };
-		5CC949F024315D7400D96D9B /* GiftCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949EF24315D7400D96D9B /* GiftCardView.swift */; };
-		5CC949F224315D7E00D96D9B /* QRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949F124315D7E00D96D9B /* QRCodeVC.swift */; };
+		5CC94A0324317D3A00D96D9B /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949F624317D3A00D96D9B /* CurrencyTextField.swift */; };
+		5CC94A0424317D3A00D96D9B /* KGRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949F724317D3A00D96D9B /* KGRadioButton.swift */; };
+		5CC94A0524317D3A00D96D9B /* StripeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949F924317D3A00D96D9B /* StripeVC.swift */; };
+		5CC94A0624317D3A00D96D9B /* QRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949FA24317D3A00D96D9B /* QRCodeVC.swift */; };
+		5CC94A0724317D3A00D96D9B /* BuyGiftCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949FC24317D3A00D96D9B /* BuyGiftCardVC.swift */; };
+		5CC94A0824317D3A00D96D9B /* GiftCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949FD24317D3A00D96D9B /* GiftCardView.swift */; };
+		5CC94A0924317D3A00D96D9B /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC949FF24317D3A00D96D9B /* SuccessVC.swift */; };
+		5CC94A0A24317D3A00D96D9B /* ProcessGiftCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94A0024317D3A00D96D9B /* ProcessGiftCardVC.swift */; };
+		5CC94A0B24317D3A00D96D9B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94A0124317D3A00D96D9B /* Models.swift */; };
+		5CC94A0C24317D3A00D96D9B /* ScanGiftCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94A0224317D3A00D96D9B /* ScanGiftCardVC.swift */; };
+		5CC94A0E24317F0D00D96D9B /* GiftCardAmountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94A0D24317F0D00D96D9B /* GiftCardAmountVC.swift */; };
 		B67046BB229F0D7E006CB603 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67046BA229F0D7E006CB603 /* EmojiCell.swift */; };
 		B67046BD229F61CF006CB603 /* EmojiCheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67046BC229F61CF006CB603 /* EmojiCheckoutCell.swift */; };
 		B690AC5122A1A52900D3F50A /* UIColor+Stripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690AC5022A1A52900D3F50A /* UIColor+Stripe.swift */; };
@@ -63,8 +72,17 @@
 		3143AB42230DF738003A54FC /* BasicIntegrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicIntegrationUITests.swift; sourceTree = "<group>"; };
 		3143AB44230DF738003A54FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3635C32E22A87D36004298B8 /* Stripe3DS2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Stripe3DS2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CC949EF24315D7400D96D9B /* GiftCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftCardView.swift; sourceTree = "<group>"; };
-		5CC949F124315D7E00D96D9B /* QRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeVC.swift; sourceTree = "<group>"; };
+		5CC949F624317D3A00D96D9B /* CurrencyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		5CC949F724317D3A00D96D9B /* KGRadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KGRadioButton.swift; sourceTree = "<group>"; };
+		5CC949F924317D3A00D96D9B /* StripeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeVC.swift; sourceTree = "<group>"; };
+		5CC949FA24317D3A00D96D9B /* QRCodeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeVC.swift; sourceTree = "<group>"; };
+		5CC949FC24317D3A00D96D9B /* BuyGiftCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyGiftCardVC.swift; sourceTree = "<group>"; };
+		5CC949FD24317D3A00D96D9B /* GiftCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftCardView.swift; sourceTree = "<group>"; };
+		5CC949FF24317D3A00D96D9B /* SuccessVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
+		5CC94A0024317D3A00D96D9B /* ProcessGiftCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessGiftCardVC.swift; sourceTree = "<group>"; };
+		5CC94A0124317D3A00D96D9B /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5CC94A0224317D3A00D96D9B /* ScanGiftCardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanGiftCardVC.swift; sourceTree = "<group>"; };
+		5CC94A0D24317F0D00D96D9B /* GiftCardAmountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCardAmountVC.swift; sourceTree = "<group>"; };
 		8BBD79D2207FD44300F85BED /* fi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = fi; path = Localizations/fi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8BBD79D3207FD45A00F85BED /* nb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = nb; path = Localizations/nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B67046BA229F0D7E006CB603 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
@@ -170,10 +188,51 @@
 		5CC949EE24315D3D00D96D9B /* QRCode */ = {
 			isa = PBXGroup;
 			children = (
-				5CC949F124315D7E00D96D9B /* QRCodeVC.swift */,
-				5CC949EF24315D7400D96D9B /* GiftCardView.swift */,
+				5CC949FB24317D3A00D96D9B /* BuyGiftCards */,
+				5CC949F824317D3A00D96D9B /* Practice */,
+				5CC949FE24317D3A00D96D9B /* ReadGiftCard */,
+				5CC949F524317D3A00D96D9B /* Utils */,
 			);
 			path = QRCode;
+			sourceTree = "<group>";
+		};
+		5CC949F524317D3A00D96D9B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5CC949F624317D3A00D96D9B /* CurrencyTextField.swift */,
+				5CC949F724317D3A00D96D9B /* KGRadioButton.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5CC949F824317D3A00D96D9B /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				5CC949F924317D3A00D96D9B /* StripeVC.swift */,
+				5CC949FA24317D3A00D96D9B /* QRCodeVC.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		5CC949FB24317D3A00D96D9B /* BuyGiftCards */ = {
+			isa = PBXGroup;
+			children = (
+				5CC94A0D24317F0D00D96D9B /* GiftCardAmountVC.swift */,
+				5CC949FC24317D3A00D96D9B /* BuyGiftCardVC.swift */,
+				5CC949FD24317D3A00D96D9B /* GiftCardView.swift */,
+			);
+			path = BuyGiftCards;
+			sourceTree = "<group>";
+		};
+		5CC949FE24317D3A00D96D9B /* ReadGiftCard */ = {
+			isa = PBXGroup;
+			children = (
+				5CC949FF24317D3A00D96D9B /* SuccessVC.swift */,
+				5CC94A0024317D3A00D96D9B /* ProcessGiftCardVC.swift */,
+				5CC94A0124317D3A00D96D9B /* Models.swift */,
+				5CC94A0224317D3A00D96D9B /* ScanGiftCardVC.swift */,
+			);
+			path = ReadGiftCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,17 +393,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CC949F224315D7E00D96D9B /* QRCodeVC.swift in Sources */,
-				5CC949F024315D7400D96D9B /* GiftCardView.swift in Sources */,
 				C124A18B1CCACAA1007D42EE /* CheckoutViewController.swift in Sources */,
+				5CC94A0324317D3A00D96D9B /* CurrencyTextField.swift in Sources */,
+				5CC94A0A24317D3A00D96D9B /* ProcessGiftCardVC.swift in Sources */,
 				04BC29A01CD81D3900318357 /* BrowseProductsViewController.swift in Sources */,
 				C188F2A61CC1A338003A524B /* MyAPIClient.swift in Sources */,
 				C1B83CBD1CCE6C0700F0790B /* Buttons.swift in Sources */,
+				5CC94A0724317D3A00D96D9B /* BuyGiftCardVC.swift in Sources */,
 				B67046BD229F61CF006CB603 /* EmojiCheckoutCell.swift in Sources */,
+				5CC94A0B24317D3A00D96D9B /* Models.swift in Sources */,
 				B690AC5122A1A52900D3F50A /* UIColor+Stripe.swift in Sources */,
 				C124A18D1CCACC92007D42EE /* CheckoutRowView.swift in Sources */,
+				5CC94A0824317D3A00D96D9B /* GiftCardView.swift in Sources */,
+				5CC94A0E24317F0D00D96D9B /* GiftCardAmountVC.swift in Sources */,
+				5CC94A0424317D3A00D96D9B /* KGRadioButton.swift in Sources */,
 				042CA41D1A685E8D00D778E7 /* AppDelegate.swift in Sources */,
+				5CC94A0C24317D3A00D96D9B /* ScanGiftCardVC.swift in Sources */,
 				F1D12FE71F91721600CE68A7 /* PaymentContextFooterView.swift in Sources */,
+				5CC94A0924317D3A00D96D9B /* SuccessVC.swift in Sources */,
+				5CC94A0624317D3A00D96D9B /* QRCodeVC.swift in Sources */,
+				5CC94A0524317D3A00D96D9B /* StripeVC.swift in Sources */,
 				B67046BB229F0D7E006CB603 /* EmojiCell.swift in Sources */,
 				C13C24221D14438700F3765E /* SettingsViewController.swift in Sources */,
 			);

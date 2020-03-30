@@ -11,6 +11,10 @@ import Stripe
 import MessageUI
 
 class CheckoutViewController: UIViewController {
+    
+    
+    var amountTextField = CurrencyTextField()
+
 
     // 1) To get started with this demo, first head to https://dashboard.stripe.com/account/apikeys
     // and copy your "Test Publishable Key" (it looks like pk_test_abcdef) into the line below.
@@ -96,7 +100,7 @@ class CheckoutViewController: UIViewController {
         paymentContext.prefilledInformation = userInformation
         paymentContext.paymentAmount = products.reduce(0) { result, product in
             return result + product.price
-        }
+        } //TODO
         paymentContext.paymentCurrency = self.paymentCurrency
 
         self.tableView = UITableView()
@@ -434,5 +438,24 @@ extension CheckoutViewController: MFMailComposeViewControllerDelegate {
         view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
         return UIGraphicsGetImageFromCurrentImageContext()
     }
+    
 }
-
+extension CheckoutViewController {
+    
+        func setupAmountLabel(){
+        self.amountTextField.font = self.amountTextField.font!.withSize(50)
+        self.amountTextField.textAlignment = .center
+        self.view.addSubview(amountTextField)
+    }
+    func setupAmountConstraint(){
+        self.amountTextField.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            //self.amountTextField.topAnchor.constraint(equalTo: self.enterBillLabel.bottomAnchor, constant: 10),
+            self.amountTextField.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            self.amountTextField.heightAnchor.constraint(equalToConstant: 50),
+            self.amountTextField.widthAnchor.constraint(equalToConstant: 300)
+        ])
+        
+    }
+    
+}

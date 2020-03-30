@@ -149,9 +149,12 @@ class BrowseProductsViewController: UICollectionViewController {
     }
     
     @objc func didSelectBuy() {
-        let checkoutViewController = CheckoutViewController(products: shoppingCart,
-                                                            settings: self.settingsVC.settings)
-        self.navigationController?.pushViewController(checkoutViewController, animated: true)
+//        let checkoutViewController = CheckoutViewController(products: shoppingCart,
+//                                                            settings: self.settingsVC.settings)
+//        self.navigationController?.pushViewController(checkoutViewController, animated: true)
+        let giftCardAmount = GiftCardAmountVC(products: shoppingCart, settings: self.settingsVC.settings)
+        self.navigationController?.pushViewController(giftCardAmount, animated: true)
+
     }
     
     func addToCart(_ product: Product) {

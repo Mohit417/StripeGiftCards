@@ -68,7 +68,7 @@ class EmojiCell: UICollectionViewCell {
     }
     
     public func configure(with product: Product, numberFormatter: NumberFormatter) {
-        priceLabel.text = numberFormatter.string(from: NSNumber(value: Float(product.price)/100))!
+        priceLabel.text = "Gift Card"//numberFormatter.string(from: NSNumber(value: Float(product.price)/100))!
         emojiLabel.text = product.emoji
     }
     
@@ -97,7 +97,7 @@ class EmojiCell: UICollectionViewCell {
             
             emojiLabel.centerXAnchor.constraint(equalTo: emojiContentBackground.centerXAnchor),
             emojiLabel.centerYAnchor.constraint(equalTo: emojiContentBackground.centerYAnchor),
-            
+//
             priceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: defaultPadding),
             priceLabel.centerYAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -emojiBackgroundBottomPadding/2),
             

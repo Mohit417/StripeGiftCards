@@ -51,6 +51,6 @@ class EmojiCheckoutCell: UITableViewCell {
     public func configure(with product: Product, numberFormatter: NumberFormatter) {
         priceLabel.text = "Gift Card"//numberFormatter.string(from: NSNumber(value: Float(product.price)/100))!
         emojiLabel.text = product.emoji
-        detailLabel.text = product.emoji.unicodeScalars.first?.properties.name?.localizedCapitalized
+        //detailLabel.text = product.emoji.unicodeScalars.first?.properties.name?.localizedCapitalized
     }
 }
