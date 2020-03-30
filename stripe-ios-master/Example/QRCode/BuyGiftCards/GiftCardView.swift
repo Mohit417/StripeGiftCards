@@ -19,6 +19,9 @@ class GiftCardView: UIView {
     
     init(frame: CGRect, restName: String, qrCode: UIImage, giftID: String, width: CGFloat) {
         super.init(frame: frame)
+        
+        self.backgroundColor = .white
+        
         self.restaurantName = restName
         self.QRCode = qrCode
         self.giftcardID = giftID

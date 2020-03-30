@@ -78,7 +78,7 @@ class BrowseProductsViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Emoji Apparel"
+        self.navigationItem.title = "Restaurant Gift Cards"
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.view.backgroundColor = .white
         collectionView?.backgroundColor = UIColor(red: 246/255, green: 249/255, blue: 252/255, alpha: 1)
@@ -89,7 +89,7 @@ class BrowseProductsViewController: UICollectionViewController {
         }
         #endif
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Products", style: .plain, target: nil, action: nil)
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(showSettings))
+//        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(showSettings))
         
         self.numberFormatter.locale = self.settingsVC.settings.currencyLocale
         
@@ -192,6 +192,7 @@ extension BrowseProductsViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let product = productsAndPrices[indexPath.item]
         addToCart(product)
+        didSelectBuy() // TODO
     }
     
     override func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
