@@ -52,8 +52,11 @@ class ScanGiftCardVC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
                     if true {
                         //TODO: GO TO NEXT SCREEN
                         print("Success")
-                        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ProcessGiftCard") as! ProcessGiftCardVC
-                        self.navigationController?.pushViewController(secondViewController, animated: true)
+//                        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "ProcessGiftCard") as! ProcessGiftCardVC
+//                        self.navigationController?.pushViewController(secondViewController, animated: true)
+                        
+                        let secondViewController = ProcessGiftCardVC()
+                        navigationController?.pushViewController(secondViewController, animated: true)
                     } else {
                         print(code)
                         //TODO: GIFT CARD NOT RECOGNIZED FOR THIS RESTAURANT

@@ -22,7 +22,7 @@ class ProcessGiftCardVC: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
         self.setupVerificationLabel()
         setupEnterBillLabel()
         self.setupAmountLabel()
@@ -137,7 +137,8 @@ class ProcessGiftCardVC: UIViewController {
         
         
         if success {
-            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessVC") as! SuccessVC
+//            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "SuccessVC") as! SuccessVC
+            let secondViewController = SuccessVC()
             self.navigationController?.pushViewController(secondViewController, animated: true)
         } else {
             self.validationLabel.isHidden = false

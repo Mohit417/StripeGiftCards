@@ -19,6 +19,7 @@ class BrowseProductsViewController: UICollectionViewController {
         Product(emoji: "Pirate Supply Store", price: 2000),
         Product(emoji: "Canyon Market", price: 4000),
         Product(emoji: "Castle in the Air", price: 3000),
+        Product(emoji: "Anzio's Pizza", price: 1500),
         Product(emoji: "Cat Town Cafe", price: 700),
         Product(emoji: "Convert Clothing", price: 600),
         Product(emoji: "Folsom Street Foundry", price: 1000),
@@ -91,6 +92,8 @@ class BrowseProductsViewController: UICollectionViewController {
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Products", style: .plain, target: nil, action: nil)
 //        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Settings", style: .plain, target: self, action: #selector(showSettings))
         
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Scan Gift Card", style: .plain, target: self, action: #selector(showSettings))
+        
         self.numberFormatter.locale = self.settingsVC.settings.currencyLocale
         
         collectionView?.register(EmojiCell.self, forCellWithReuseIdentifier: "Cell")
@@ -143,7 +146,8 @@ class BrowseProductsViewController: UICollectionViewController {
     }
 
     @objc func showSettings() {
-        let navController = UINavigationController(rootViewController: settingsVC)
+        let scanGiftCardVC = ScanGiftCardVC()
+        let navController = UINavigationController(rootViewController: scanGiftCardVC)
         navController.modalPresentationStyle = .fullScreen
         self.present(navController, animated: true, completion: nil)
     }

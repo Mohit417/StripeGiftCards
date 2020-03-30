@@ -10,9 +10,9 @@ import UIKit
 
 class SuccessVC: UIViewController {
     
-    var amountRemoved = 13.37
-    var billRemaining = 42.69
-    var amountRemaining = 17.38
+    var amountRemoved = 15.00
+    var billRemaining = 5.00
+    var amountRemaining = 0.00
     
     let type = UIDevice().type
     var verificationLabel = UILabel()
@@ -24,7 +24,7 @@ class SuccessVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = .white
         self.setupVerificationLabel()
         self.setupAmountRemovedLabel()
         self.setupAmountRemainingLabel()
