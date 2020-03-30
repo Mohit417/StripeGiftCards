@@ -16,22 +16,22 @@ struct Product {
 class BrowseProductsViewController: UICollectionViewController {
 
     let productsAndPrices = [
-        Product(emoji: "Anzio's Pizza", price: 2000),
-        Product(emoji: "👖", price: 4000),
-        Product(emoji: "👗", price: 3000),
-        Product(emoji: "👞", price: 700),
-        Product(emoji: "👟", price: 600),
-        Product(emoji: "👠", price: 1000),
-        Product(emoji: "👡", price: 2000),
-        Product(emoji: "👢", price: 2500),
-        Product(emoji: "👒", price: 800),
-        Product(emoji: "👙", price: 3000),
-        Product(emoji: "💄", price: 2000),
-        Product(emoji: "🎩", price: 5000),
-        Product(emoji: "👛", price: 5500),
-        Product(emoji: "👜", price: 6000),
-        Product(emoji: "🕶", price: 2000),
-        Product(emoji: "👚", price: 2500),
+        Product(emoji: "Pirate Supply Store", price: 2000),
+        Product(emoji: "Canyon Market", price: 4000),
+        Product(emoji: "Castle in the Air", price: 3000),
+        Product(emoji: "Cat Town Cafe", price: 700),
+        Product(emoji: "Convert Clothing", price: 600),
+        Product(emoji: "Folsom Street Foundry", price: 1000),
+        Product(emoji: "Garden Creamery", price: 2000),
+        Product(emoji: "Mollusk Surf Shop", price: 2500),
+        Product(emoji: "Sandbox Bakery", price: 800),
+        Product(emoji: "The Rare Barrel", price: 3000),
+//        Product(emoji: "💄", price: 2000),
+//        Product(emoji: "🎩", price: 5000),
+//        Product(emoji: "👛", price: 5500),
+//        Product(emoji: "👜", price: 6000),
+//        Product(emoji: "🕶", price: 2000),
+//        Product(emoji: "👚", price: 2500),
     ]
     
     var shoppingCart = [Product]() {

@@ -35,7 +35,7 @@ class CheckoutRowView: UIView {
 
     var detail: String = "" {
         didSet {
-            self.detailLabel.text = detail
+            self.detailLabel.text = detail 
         }
     }
 
